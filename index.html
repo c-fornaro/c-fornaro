@@ -1,249 +1,216 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Drum Room 🥁</title>
+    <title>Candela — Portfolio</title>
 
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: #111111;
-            color: #f5f5f5;
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 30px;
-        }
-
-        .container {
-            width: 100%;
-            max-width: 900px;
-        }
-
-        header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .eyebrow {
-            text-transform: uppercase;
-            letter-spacing: 4px;
-            font-size: 13px;
-            opacity: 0.6;
-            margin-bottom: 12px;
-        }
-
-        h1 {
-            font-size: clamp(55px, 12vw, 110px);
-            line-height: 0.9;
-            letter-spacing: -5px;
-        }
-
-        .subtitle {
-            margin-top: 20px;
-            font-size: 18px;
-            color: #bbbbbb;
-            line-height: 1.5;
-        }
-
-        .game-card {
-            background: #1d1d1d;
-            border: 1px solid #333333;
-            border-radius: 24px;
-            padding: 40px;
-            text-align: center;
-            margin-bottom: 25px;
-        }
-
-        .drum {
-            font-size: 90px;
-            margin-bottom: 20px;
-        }
-
-        .game-card h2 {
-            font-size: 28px;
-            margin-bottom: 12px;
-        }
-
-        .game-card p {
-            color: #aaaaaa;
-            line-height: 1.6;
-            max-width: 600px;
-            margin: 0 auto 25px;
-        }
-
-        .play-button {
-            display: inline-block;
-            background: #f5f5f5;
-            color: #111111;
-            text-decoration: none;
-            font-weight: bold;
-            padding: 15px 28px;
-            border-radius: 999px;
-            transition: transform 0.2s, background 0.2s;
-        }
-
-        .play-button:hover {
-            transform: scale(1.05);
-            background: #dddddd;
-        }
-
-        .instructions {
-            display: flex;
-            justify-content: center;
-            gap: 12px;
-            flex-wrap: wrap;
-            margin-top: 25px;
-        }
-
-        .key {
-            border: 1px solid #444444;
-            border-radius: 10px;
-            padding: 8px 12px;
-            color: #cccccc;
-            font-size: 14px;
-        }
-
-        .about {
-            background: #181818;
-            border-radius: 20px;
-            padding: 30px;
-            margin-bottom: 25px;
-        }
-
-        .about h2 {
-            margin-bottom: 15px;
-        }
-
-        .about p {
-            color: #aaaaaa;
-            line-height: 1.6;
-        }
-
-        .concepts {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 20px;
-        }
-
-        .tag {
-            border: 1px solid #444444;
-            padding: 8px 12px;
-            border-radius: 999px;
-            font-size: 13px;
-            color: #cccccc;
-        }
-
-        footer {
-            text-align: center;
-            color: #666666;
-            font-size: 13px;
-            padding: 20px;
-        }
-
-        @media (max-width: 600px) {
-            body {
-                padding: 20px;
-            }
-
-            .game-card {
-                padding: 30px 20px;
-            }
-
-            h1 {
-                letter-spacing: -3px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <main class="container">
+    <header class="header">
+        <div class="logo">c.</div>
 
-        <header>
-            <div class="eyebrow">A tiny interactive project</div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#learning">Learning</a>
+        </nav>
+    </header>
 
-            <h1>DRUM<br>ROOM 🥁</h1>
 
-            <p class="subtitle">
-                A little virtual drum kit made with Scratch.
-                <br>
-                Pick a beat. Hit the keys. Make some noise.
+    <main>
+
+        <!-- HERO -->
+        <section class="hero">
+
+            <p class="eyebrow">artist & computer science student</p>
+
+            <h1>Candela</h1>
+
+            <p class="intro">
+                I'm an artist and singer-songwriter from Argentina,
+                currently exploring Computer Science and programming.
+                I like combining creativity, music and technology to
+                build things that feel like me.
             </p>
-        </header>
 
+            <div class="hero-links">
+                <a href="https://github.com/c-fornaro" target="_blank">
+                    GitHub ↗
+                </a>
 
-        <section class="game-card">
-
-            <div class="drum">🥁</div>
-
-            <h2>Ready to play?</h2>
-
-            <p>
-                Play four different drum sounds using your keyboard
-                and switch between three different backing tracks
-                whenever you feel like changing the vibe.
-            </p>
-
-            <a
-                class="play-button"
-                href="https://scratch.mit.edu/projects/1379829700/"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                PLAY THE DRUMS →
-            </a>
-
-            <div class="instructions">
-                <span class="key">🥁 Drum keys</span>
-                <span class="key">SPACE → Change track</span>
+                <a href="https://scratch.mit.edu/projects/1379829700/" target="_blank">
+                    Scratch ↗
+                </a>
             </div>
 
         </section>
 
 
-        <section class="about">
+        <!-- ABOUT -->
+        <section id="about" class="section">
 
-            <h2>What I learned</h2>
+            <div class="section-label">
+                01 / about
+            </div>
 
-            <p>
-                I built this project while learning the basics of
-                Computer Science and programming with Scratch.
-                The goal was to experiment with interaction,
-                sound and events while having fun with music.
-            </p>
+            <div class="section-content">
 
-            <div class="concepts">
-                <span class="tag">Events</span>
-                <span class="tag">Inputs & Outputs</span>
-                <span class="tag">Variables</span>
-                <span class="tag">Conditionals</span>
-                <span class="tag">Boolean Expressions</span>
-                <span class="tag">Loops</span>
-                <span class="tag">Abstraction</span>
+                <h2>A little bit of everything.</h2>
+
+                <p>
+                    My background is in music, singing and creative work.
+                    Now I'm also learning how things work behind the screen:
+                    algorithms, programming, problem solving and computer science.
+                </p>
+
+                <p>
+                    I'm interested in the space between creative thinking
+                    and technology, and in learning by actually making things.
+                </p>
+
             </div>
 
         </section>
 
 
-        <footer>
-            Made by Candela · Learning Computer Science 🎧
-        </footer>
+        <!-- PROJECTS -->
+        <section id="projects" class="section">
+
+            <div class="section-label">
+                02 / projects
+            </div>
+
+            <div class="section-content">
+
+                <div class="project">
+
+                    <div class="project-number">
+                        01
+                    </div>
+
+                    <div class="project-info">
+
+                        <p class="project-type">
+                            Scratch · Interactive project
+                        </p>
+
+                        <h2>Low Battery</h2>
+
+                        <p>
+                            An interactive musical game made with Scratch.
+                            The player can play four different drum sounds
+                            using the keyboard, switch between background
+                            music tracks and interact with an animal that
+                            reacts to the mouse cursor.
+                        </p>
+
+                        <a
+                            class="project-link"
+                            href="https://scratch.mit.edu/projects/1379829700/"
+                            target="_blank"
+                        >
+                            Play Low Battery →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- LEARNING -->
+        <section id="learning" class="section">
+
+            <div class="section-label">
+                03 / learning
+            </div>
+
+            <div class="section-content">
+
+                <h2>Currently learning</h2>
+
+                <p class="learning-intro">
+                    I'm building my foundations in Computer Science
+                    and programming through hands-on projects.
+                </p>
+
+                <div class="skills">
+
+                    <span>Computer Science</span>
+                    <span>Programming</span>
+                    <span>Algorithms</span>
+                    <span>Problem Solving</span>
+                    <span>Scratch</span>
+                    <span>HTML / CSS</span>
+
+                </div>
+
+                <div class="course">
+
+                    <div>
+                        <p class="course-label">Currently studying</p>
+                        <h3>CS50x</h3>
+                    </div>
+
+                    <p>
+                        Introduction to Computer Science and programming
+                        through Harvard University.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT / ELSEWHERE -->
+        <section class="section last-section">
+
+            <div class="section-label">
+                04 / elsewhere
+            </div>
+
+            <div class="section-content">
+
+                <h2>Find me around the internet.</h2>
+
+                <div class="links-list">
+
+                    <a href="https://github.com/c-fornaro" target="_blank">
+                        <span>GitHub</span>
+                        <span>↗</span>
+                    </a>
+
+                    <a
+                        href="https://scratch.mit.edu/projects/1379829700/"
+                        target="_blank"
+                    >
+                        <span>Scratch</span>
+                        <span>↗</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
 
     </main>
 
+
+    <footer>
+        <span>made by Candela</span>
+        <span>© 2026</span>
+    </footer>
+
 </body>
 </html>
-```
