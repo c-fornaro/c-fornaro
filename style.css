@@ -507,6 +507,28 @@ nav a:hover {
     color: #f04cff;
 }
 
+/* PROJECT TAGS */
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+
+    margin: 0 0 24px;
+}
+
+
+.project-tags span {
+    border: 1px solid #303037;
+
+    color: #88888f;
+
+    padding: 5px 9px;
+
+    font-size: 10px;
+
+    letter-spacing: 0.02em;
+}
 
 /* LEARNING */
 
